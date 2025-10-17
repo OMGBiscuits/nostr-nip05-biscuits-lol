@@ -91,6 +91,8 @@ Your client should show a verified check/indicator.
 You **do not** need Azure for this. However, if you want your domain to do more than serve static files (e.g., route some paths to a function, add headers, or split traffic, whatever), and especially if you are using the root domain, you can place **Azure Front Door** in front. It doesn’t have to be Azure Front Door of course, anything that handles custom routing (eg Nginx):
 
 **High-level steps**
+
+1. You still need Step 1 from the GitHub Pages Section, Azure Front Door will point to this Url.
 1. Create a Front Door profile (Standard is fine).  
 2. **Origin** = `yourusername.github.io`, **Origin path** = `/<this-repo-name>` (since this is a project site).  
 3. **Route** `/*` → that origin (HTTPS).  
