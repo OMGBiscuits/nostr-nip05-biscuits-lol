@@ -55,18 +55,18 @@ Still on **Settings → Pages**:
 At your DNS provider:
 
 - **If using the apex/root (`biscuits.lol`)**  
-  Use an **ALIAS/ANAME** (or the four A/AAAA records GitHub lists). Example with ALIAS:
+  Use an **ALIAS**.
   - Type: `ALIAS`  
   - Host: `@` (or blank for root)  
   - Value: `<username>.github.io`  
-  - TTL: 600–3600
+  - TTL: 600
 
 - **If using a subdomain (`id.biscuits.lol`)**  
   Use **CNAME**:
   - Type: `CNAME`  
   - Host: `id`  
   - Value: `<username>.github.io`  
-  - TTL: 600–3600
+  - TTL: 600
 
 > If your apex also handles email, **prefer ALIAS** at the apex so MX/TXT records can coexist.
 
