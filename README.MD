@@ -99,6 +99,7 @@ You **do not** need Azure for this. However, if you want your domain to do more 
 4. Add your custom domain (e.g., `biscuits.lol`), validate via TXT, enable managed TLS.  
 5. At your registrar, set apex **ALIAS** → `<endpoint>.z01.azurefd.net`.  
 6. (Later) Add a second origin (e.g., Azure Function) and a higher-priority route for any dynamic paths you need.
+7. There's probably some extra steps, depending on where you're at with your Azure account. I've just glossed over the details with a rough framework. If it was accurate, Azure would probably change it all so this guide would be out of date. Hopefully you get the right idea.
 
 > With Front Door, GitHub Pages does **not** need to know your custom domain; Front Door terminates TLS and fetches from the default Pages origin.
 
